@@ -33,7 +33,7 @@ class Settings extends Component {
     render() {
         return (
             <ScrollView>
-                <List>
+                <List containerStyle={{marginTop: 55}}>
                     <ListItem
                         title="Notifications"
                     />
