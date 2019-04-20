@@ -8,7 +8,7 @@ import {
     TouchableHighlight
 } from 'react-native';
 
-//const styles ='./app/styles';
+const styles ='./style.js';
 
 export default class itemlister extends Component{
     constructor(){
@@ -43,7 +43,7 @@ export default class itemlister extends Component{
             <TouchableHighlight onPress={() => {
                 this.pressRow(item);
             }}>
-            <View style={style.liText}>
+            <View style={styles.liText}>
             <Text style={styles.liText}>{item.title}</Text>
             </View>
             
@@ -53,7 +53,7 @@ export default class itemlister extends Component{
     render(){
         return (
             <View style={styles.container}>
-            <ListView
+            <ListView containerStyle={{marginTop: 55}}
                 dataSource={this.state.itemDataSource}
                 renderRow ={this.renderRow}
 

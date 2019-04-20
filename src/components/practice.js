@@ -10,6 +10,9 @@ import {
 
 const styles ='./app/styles';
 
+import * as firebase from 'firebase';
+import config from '/config/john.js'
+
 export default class itemlister extends Component{
     constructor(){
         super();
